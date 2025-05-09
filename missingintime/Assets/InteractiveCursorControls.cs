@@ -133,9 +133,6 @@ public partial class @InteractiveCursorControls: IInputActionCollection2, IDispo
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-
-        public object Position { get; internal set; }
-
         public static implicit operator InputActionMap(MouseActions set) { return set.Get(); }
         public void AddCallbacks(IMouseActions instance)
         {

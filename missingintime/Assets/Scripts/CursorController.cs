@@ -61,8 +61,8 @@ public class CursorController : MonoBehaviour
             Vector3 fromMouseToInteractableOffset =
                 interactablesManager.Interactables[itemIndex].position
                 - new Vector3(
-                    controls.Mouse.Position.ReadValue<Vector2>().x,
-                    controls.Mouse.Position.ReadValue<Vector2>().y,
+                    Input.mousePosition.x, //fixed error
+                    Input.mousePosition.y,
                     0f);
             float sqrMag = fromMouseToInteractableOffset.sqrMagnitude;
 
