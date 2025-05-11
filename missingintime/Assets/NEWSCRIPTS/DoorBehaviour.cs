@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class DoorBehaviour : MonoBehaviour
 {
@@ -11,9 +13,9 @@ public class DoorBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject == key && isLocked)
+        if (other.gameObject == key)
         {
-            OpenDoor();
+            SceneManager.LoadScene(2);
         }
     }
 

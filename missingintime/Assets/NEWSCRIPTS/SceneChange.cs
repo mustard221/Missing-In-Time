@@ -6,8 +6,13 @@ using UnityEngine.SceneManagement;
 public class SceneChange : MonoBehaviour
 {
 
-    public void ChangeSceneByName(string sceneName)
-    {
+    public string sceneToLoad;
 
+    public void OnMouseDown()
+    {
+        if (!string.IsNullOrEmpty(sceneToLoad))
+        {
+            SceneManager.LoadScene(sceneToLoad);
+        }
     }
 }
