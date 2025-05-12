@@ -9,7 +9,7 @@ public class DoorBehaviour : MonoBehaviour
 
     public GameObject key;
 
-    private bool isLocked = true;
+    //private bool isLocked = true;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,8 +21,7 @@ public class DoorBehaviour : MonoBehaviour
 
     private void OpenDoor()
     {
-        // Add door opening animation or simply change the door's position.
-        Destroy(gameObject); // Adjust the value based on your door's size.
-        isLocked = false;
+        Destroy(gameObject); // door unlocked
+        //isLocked = false;
     }
 }

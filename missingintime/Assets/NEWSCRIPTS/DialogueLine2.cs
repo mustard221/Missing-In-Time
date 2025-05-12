@@ -29,6 +29,15 @@ namespace DialogueSystem
         private void Awake()
         {
             textHolder = GetComponent<Text>();
+            if (textHolder == null)
+            {
+                Debug.LogError("Text component missing from this GameObject");
+            }
+
+            if (imageHolder == null)
+            {
+                Debug.LogError("Image component missing from this GameObject");
+            }
         }
 
         private void Start()
