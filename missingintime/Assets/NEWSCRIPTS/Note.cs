@@ -2,18 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Note : MonoBehaviour
 {
-    public UnityEvent interacted;
-    private AudioSource audioSource;
 
-    private void OnMouseDown()
+    public Text Textfield;
+
+    public void SetText(string text)
     {
-        interacted?.Invoke();
-        audioSource.Play();
-
+        Textfield.text = text;
     }
-
-
 }
