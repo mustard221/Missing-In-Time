@@ -38,6 +38,14 @@ public class Highlight : MonoBehaviour
         {
             DisplayDescription("Just a regular torch...");
         }
+        else if (objectName.Contains("Book"))
+        {
+            DisplayDescription("An old, dusty bookshelf");
+        }
+        else if (objectName.Contains("Note"))
+        {
+            DisplayDescription("The passage lies within the brightest tome.");
+        }
         else
         {
             DisplayDescription("Nothing special here...");
