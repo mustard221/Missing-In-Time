@@ -15,7 +15,7 @@ public class DoorBehaviour : MonoBehaviour
     {
         if (other.gameObject == key)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 
